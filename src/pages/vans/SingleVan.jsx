@@ -8,7 +8,7 @@ export default function SingleVan()  {
 
     const { state } = useLocation()
 
-    console.log(state)
+    
 
     React.useEffect(() => {
         fetch(`http://localhost:4000/api/vans/${params.id}`)
