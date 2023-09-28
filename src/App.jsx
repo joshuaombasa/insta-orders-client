@@ -17,6 +17,7 @@ import HostVanDetails from './pages/host/HostVanDetails'
 import HostVanSingleDetails from './components/HostVanSingleDetails'
 import HostVanPricing from './components/HostVanPricing'
 import HostVanPhotos from './components/HostVanPhotos'
+import NotFound from './pages/NotFound'
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
               </Route>
               <Route path='reviews' element={<Reviews />} />
             </Route>
+            <Route path='*' element={<NotFound/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
