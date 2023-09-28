@@ -54,15 +54,15 @@ export default function Vans() {
             <h1>Explore our van options</h1>
             <nav className="vans--filter--nav">
                 <button 
-                     className="vans--filter--btn"
+                     className={`vans--filter--btn simple ${vanType === "simple" ? "selected" : ""}`}
                      onClick={() => generateNewSearchParamsString("type", "simple")}
                 >Simple</button>
                 <button 
-                     className="vans--filter--btn"
+                     className={`vans--filter--btn luxury ${vanType === "luxury" ? "selected" : ""}`}
                      onClick={() => generateNewSearchParamsString("type", "luxury")}
                 >Luxury</button>
                 <button 
-                     className="vans--filter--btn"
+                     className={`vans--filter--btn rugged ${vanType === "rugged" ? "selected" : ""}`}
                      onClick={() => generateNewSearchParamsString("type", "rugged")}
                 >Rugged</button>
                 {vanType && <button 
